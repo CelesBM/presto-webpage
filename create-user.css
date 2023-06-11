@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #fbf7ff;
+}
+
+/* ANIMACIONES KEYFRAMES */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* HEADER */
+
+header {
+  background: rgb(235, 235, 235);
+  background: linear-gradient(
+    180deg,
+    rgba(235, 235, 235, 1) 0%,
+    rgba(230, 220, 241, 1) 69%,
+    rgba(238, 225, 252, 1) 83%,
+    rgba(199, 180, 219, 1) 90%,
+    rgba(166, 143, 192, 1) 95%,
+    rgba(80, 49, 123, 1) 100%
+  );
+
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+}
+
+.presto-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 2rem;
+  border-collapse: separate;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: #50317b;
+  text-decoration: none;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.navbar a::after {
+  content: "";
+  display: block;
+  background-color: #6b4996;
+  width: 100%;
+  margin-top: 3px;
+  height: 1px;
+  clip-path: var(--clippy);
+  transition: clip-path 0.7s;
+}
+
+.navbar a:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* FORM */
+
+#new-user {
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#new-user h3 {
+  text-align: center;
+  font-size: 22px;
+  color: #a473ae;
+  animation-duration: 4s;
+  animation-name: fade;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@media (min-width: 768px) {
+  #new-user h3 {
+    font-size: 30px;
+  }
+}
+
+.new-user__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+form {
+  background-image: url("https://img.freepik.com/foto-gratis/fondo-textura-acuarela-violeta_1083-172.jpg?1");
+  border: solid 0.1rem #dbc7df;
+  box-shadow: 5px 5px 5px 5px #bdbdbd;
+  padding: 30px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+  animation-duration: 7s;
+  animation-name: fade;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+form:hover {
+  box-shadow: 5px 5px 5px 5px #c9b4e9;
+}
+
+@media (min-width: 768px) {
+  form {
+    padding: 60px;
+    gap: 10px;
+  }
+}
+
+form label {
+  font-size: 14px;
+}
+
+form input {
+  border-radius: 0.3rem;
+  padding: 5px 80px 5px 10px;
+  box-shadow: 0.4px 0.4px 0.4px 0.4px #6b4996;
+  margin-bottom: 20px;
+}
+
+form input:hover {
+  box-shadow: 1px 1px 1px 1px #6b4996;
+}
+
+@media (min-width: 768px) {
+  form input {
+    padding: 10px 160px 10px 20px;
+  }
+}
+
+form button {
+  padding: 10px 40px;
+  border-radius: 3rem;
+  background-color: #dec9f6;
+  width: 100%;
+  margin-bottom: 30px;
+  transition: ease-in 0.8s;
+}
+
+form button:hover {
+  cursor: pointer;
+  background: rgb(248, 243, 249);
+  background: radial-gradient(
+    circle,
+    rgba(248, 243, 249, 1) 0%,
+    rgba(251, 247, 255, 1) 3%,
+    rgba(238, 225, 252, 1) 29%,
+    rgba(199, 180, 219, 1) 70%,
+    rgba(199, 180, 219, 1) 74%,
+    rgba(166, 143, 192, 1) 82%
+  );
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  form button {
+    margin-top: 10px;
+  }
+}
+
+form p {
+  font-size: 14px;
+  text-align: center;
+}
+
+form a {
+  font-size: 14px;
+  color: #50317b;
+  text-align: center;
+}
+
+form a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+  background: rgb(235, 235, 235);
+  background: linear-gradient(
+    180deg,
+    rgba(235, 235, 235, 1) 0%,
+    rgba(230, 220, 241, 1) 69%,
+    rgba(238, 225, 252, 1) 83%,
+    rgba(199, 180, 219, 1) 90%,
+    rgba(166, 143, 192, 1) 95%,
+    rgba(80, 49, 123, 1) 100%
+  );
+  border-top: solid 0.1rem #d4cbe0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.media--instagram,
+.media--email,
+.media--whatsapp {
+  display: flex;
+  gap: 5px;
+}
+
+footer a {
+  color: #3d3942;
+  font-size: 12px;
+  text-align: start;
+}
+
+.logo-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  .logo-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 1rem;
+  }
+}
+
+.media-img {
+  height: 20px;
+  width: 20px;
+}

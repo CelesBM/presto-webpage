@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Indie+Flower&family=Koulen&family=Montserrat:ital,wght@0,400;1,900&family=Odibee+Sans&family=Roboto&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Presto</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="/presto.jpeg" alt="logo de presto" class="presto-img" />
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="menu-icon" class="menu-icon">&#9776;</label>
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#cards">Comprar</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECCION HERO -->
+    <section id="hero">
+      <div class="hero__info">
+        <p>Querés comer saludable y no tenés tiempo para organizarte?</p>
+        <p>Llegó <span>PRESTO</span> para vos!</p>
+        <p>"Del freezer a la sartén"</p>
+        <button><a href="login.html">Ingresar a mi cuenta</a></button>
+      </div>
+
+      <!-- Probando imagenes con grid -->
+      <div class="hero__img">
+        <img src="/presto-1.avif" alt="" />
+        <img src="/presto-3.jpg" alt="" />
+        <img src="/presto-2.jpeg" alt="" />
+      </div>
+    </section>
+
+    <!-- Imagenes hero anteriores -->
+    <!--<div class="hero__img">
+        <img src="/food-1.jpeg" alt="" />
+        <img src="/food-2.jpeg" alt="" />
+        <img src="/food-3.jpeg" alt="" />
+      </div>
+    </section>-->
+
+    <!-- SECCION ABOUT -->
+    <section id="about">
+      <div class="about__container">
+        <p>Hola! Mi nombre es Lara y soy la creadora de Presto.</p>
+        <p>
+          Esta propuesta nace con la idea de ofrecer opciones saludables a la
+          hora de elegir los alimentos con los que te vas a nutrir 💜
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCION CARDS -->
+    <section id="cards">
+      <h3>Productos</h3>
+      <div class="cards__container">
+        <div class="card">
+          <h5>Milanesa de garbanzos rellenas</h5>
+          <img src="/food-4.jpeg" alt="" />
+          <div class="card--info">
+            <p>Precio: $240 c/u</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        <div class="card">
+          <h5>Milanesa de berenjena</h5>
+          <img src="/food-6.jpeg" alt="" />
+          <div class="card--info">
+            <p>Precio: $150 c/u</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        <div class="card">
+          <h5>Hamburguesas de legumbres</h5>
+          <img src="/food-3.jpeg" alt="" />
+          <div class="card--info">
+            <p>Precio: $200 c/u</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        <div class="card">
+          <h5>Milanesa de soja</h5>
+          <img src="/food-5.jpeg" alt="" />
+          <div class="card--info">
+            <p>Precio: $200 c/u</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONCTACT -->
+    <section id="contact">
+      <h3>Contacto</h3>
+      <div class="contact__container">
+        <form action="">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" placeholder="Ingrese su nombre" />
+          <label for="phone">Teléfono:</label>
+          <input type="number" id="phone" placeholder="Ingrese su teléfono" />
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" placeholder="Ingrese su email" />
+          <label for="message">Mensaje:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Ingrese su mensaje ..."
+          ></textarea>
+          <button>Enviar</button>
+        </form>
+        <div class="contact__map">
+          <h5>Envíos en Quilmes y alrededores</h5>
+          <img
+            src="https://d500.epimg.net/cincodias/imagenes/2015/02/17/lifestyle/1424198413_079371_1424198643_noticia_normal.jpg"
+            alt="Mapa de Quilmes, Buenos Aires"
+          />
+
+          <a
+            href="https://www.google.com/maps/place/Quilmes,+Provincia+de+Buenos+Aires/@-34.7242937,-58.2879197,13z/data=!3m1!4b1!4m6!3m5!1s0x95a32e38e45f5777:0x6a86dac21334524f!8m2!3d-34.7206336!4d-58.2546051!16zL20vMDM3cjh3?hl=es&entry=ttu"
+            target="_blank"
+            >Haz click aquí para obtener la ubicación</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+      <div class="footer__container">
+        <img src="/presto.jpeg" alt="Logo Presto" class="logo-img" />
+        <div class="media">
+          <div class="media--instagram">
+            <img
+              src="https://logotipoz.com/wp-content/uploads/2021/10/instagram-png.png"
+              alt=""
+              class="media-img"
+            />
+            <a href="https://www.instagram.com/prestosalutare/" target="_blank"
+              >/prestosalutare</a
+            >
+          </div>
+          <div class="media--email">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
+              alt=""
+              class="media-img"
+            />
+            <a href="https://www.gmail.com" target="_blank"
+              >prestosalutare@gmail.com</a
+            >
+          </div>
+          <div class="media--whatsapp">
+            <img
+              src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-phone-icon-png-image_6315989.png"
+              alt=""
+              class="media-img"
+            />
+            <a href="https://web.whatsapp.com/" target="_blank">1169019342</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
